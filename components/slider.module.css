@@ -1,0 +1,35 @@
+.slider {
+  -webkit-appearance: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  height: 40px;
+  background: transparent;
+  outline: none;
+}
+
+/* Thumb */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--strong-cyan) url("/images/icon-slider.svg") no-repeat center;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--strong-cyan) url("/images/icon-slider.svg") no-repeat center;
+  cursor: pointer;
+}
+
+/* STATE */
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb:active {
+  opacity: 0.8;
+  box-shadow: 0px 5px 10px var(--strong-cyan);
+}
